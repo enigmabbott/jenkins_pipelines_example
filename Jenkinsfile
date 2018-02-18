@@ -1,6 +1,8 @@
 pipeline {
     agent any;
-    def my_package_file_name = "perl-jenkins" + ${env.BUILD_ID} + ".targ.gz" ;
+    environment { 
+        my_package_filename = "perl-jenkins" + ${env.BUILD_ID} + ".targ.gz" ;
+    }  
 
     stages {
         stage('Build') {
