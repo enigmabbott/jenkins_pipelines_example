@@ -10,7 +10,7 @@ pipeline {
                 checkout scm;
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 echo 'Building..'
-                sh "find t lib bin"
+                sh "find t lib"
             }
         }
         stage('Test') {
