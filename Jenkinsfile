@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                checkout scm;
                 echo 'Building..'
+                sh "find ."
             }
         }
         stage('Test') {
