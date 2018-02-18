@@ -6,12 +6,13 @@ pipeline {
             steps {
                 checkout scm;
                 echo 'Building..'
-                sh "find ."
+                sh "find t"
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh "prove t"
             }
         }
         stage('Deploy') {
