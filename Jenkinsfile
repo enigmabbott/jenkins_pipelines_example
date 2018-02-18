@@ -1,6 +1,7 @@
 pipeline {
-    agent any
+    agent any;
     checkout scm;
+    def my_package_file_name = "perl-jenkins" + ${env.BUILD_ID} + ".targ.gz" ;
 
     stages {
         stage('Build') {
@@ -19,6 +20,8 @@ pipeline {
         stage('Package') {
             steps {
                 echo 'Packaging..'
+                sh "git archive --format=tar.gz HEAD > ${my_package_filename}"
+                sh 'ls -lrt'
             }
         }
         stage('Push to Artifactory') {
