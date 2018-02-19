@@ -29,6 +29,18 @@ pipeline {
         stage('Push to Artifactory') {
             steps {
                 echo 'Deploying....'
+                script {
+                    def server = Artifactory.server 'artman'
+                    def uploadSpec = """{
+                      "files": [
+                        {
+                          "pattern": "*tar.gz",
+                          "target": "perl-pipeline-test/my-perl-thing/"
+                        }
+                     ]
+                    }"""
+                    server.upload(uploadSpec)
+                }   
             }
         }
     }
