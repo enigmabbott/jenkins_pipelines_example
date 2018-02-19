@@ -22,7 +22,7 @@ pipeline {
         stage('Package') {
             steps {
                 echo 'Packaging..'
-                #sh "git archive --format=tar.gz HEAD > ${my_package_filename}"
+                //sh "git archive --format=tar.gz HEAD > ${my_package_filename}"
                 sh "tar cfz ${my_package_filename} bin lib"
                 sh 'ls -lrt'
             }
