@@ -1,7 +1,7 @@
 pipeline {
     agent any;
     environment { 
-        my_package_filename = "perl-jenkins" + "${env.BUILD_ID}" + ".tar.gz" ;
+        my_package_filename = "myperljenkins-" + "${env.BUILD_ID}" + ".tar.gz" ;
     }  
 
     stages {
