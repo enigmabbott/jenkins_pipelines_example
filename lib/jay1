@@ -1,0 +1,54 @@
+Jay 5/7
+
+I like these skip levels as they are a chance to catch up on my journey.
+
+Allow a time for jay to share any insights/feedback/observations
+
+Allow me to start sharing/prepping leadership w/ bigger concepts and ideas
+- Collaboration tools vs. Finalized Documentation Tools
+  — this has been a personal journey.. w/ some bumps and light bulbs
+  — collaboration tool is a canvas; it has a maturity lifecycle… 
+	-it encompasses the early brainstorming, data-request tracking as well as the final product
+ 	- the final product can be exported
+  — final document is almost like release notes… its definitive and versioned
+  — most waterfall folks are use to documentation equating to this final product
+
+—Scott is undergoing some bigger picture learning, cultural change, acknowledging the culture may not be ready for this change and that’s ok.
+
+
+Via vro == big deal … there is a lot to learn there; its not just learning nuances of syntax and layout of the tool. The automation within the tool requires “system architecture” concepts.  Those concepts are half the battle for folks like myself and Emily.
+
+Jenkins could be a big time sink
+
+Jenkins corners: devsecops, EA, cyber,  dev-teams, us
+   — Our project may not have the scope
+  — ananth and I agree: get in and get out
+  — EA is going down the bigger CI/CD road… which is a point for leadership to consider
+  — there can be LOADS of questions around Jenkins and CI/CD from app team
+  — Emily might be good person to participate and maintain this
+	- fits her developer background
+	- is a natural step down in the IT stack from a developer mind-set/skill-set
+
+WWT Thoughts
+Day 1
+	CMDB / VRA separation
+        Prove out connectivity patterns, architecture, service account
+        Sort out which fields are truly required, which are “resolvable”
+        Acknowledge our implementation architecture is a contingent on the CMDB maturity itself
+		- collect all information up front model
+		- collect “enough” information (ie. Owner) up front… have “owner” fill in details later (this may not be an option)
+       Acknowledge we should move to a different UI menu model:
+		- “canned” and streamlined options “t-shirt size” analogy
+		- other … more involved;
+		- shoot for “canned” options to meet 80% of requests
+
+Day 2 
+	Happy path: list all day 2 possibilities (disk, firewall rules, user/group AD access)
+	Understand that these details SHOULD NOT be in UI … but stored as playbooks/templates in Ansible
+	Day1 menu may allow selection of which Ansible playbook to be applied first
+
+Day3 (the host has a running app inside it)
+	Understand this is a ways off…
+	Understand this might be a container rather than an actual VM 
+	Understand this bridges the gap between Jenkins on-prem app-team journey and our infrastructure PAAS journey
+	This is a lofty goal… but we should be thinking about it now so that… like building the gateway arch… both sides connect when we get there. 
